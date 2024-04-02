@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='static/estilo.css')}}">
 </head>
-<body>
-    mes : {{a}} <br>
-    valor : {{b}}
+<body> 
+    <p>mes : {{a}} <br>
+    valor : {{b}}</p>
+
+    <!-- <p><img src="/static/mi.jpg" alt=""></p> -->
+    <img src="{{url_for('static', filename='mi.jpg')}}" alt="">
+    
 
 </body>
 </html>
